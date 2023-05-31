@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+    box-sizing: border-box;
+}
+body {
+  height: auto;
+  min-height: 30rem;
+  background-color: black;
+  background-image: linear-gradient(to top right,rgb(0, 0, 0),rgb(231, 182, 22));
+  background-size:  300% 300%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: color-a 6s ease-in-out infinite;
+  grid-template-rows: 1fr auto;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+}
+a:hover{
+  color: orange;
+}
+.content {
+  margin-top: 54px;
+}
+.header {
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.left-title {
+  text-decoration: none;
+  width: 7rem;
+  color: #ffffff;
+  font-size: 18px;
+  float: left;
+  font-weight: bold;
+}
+.right-title {
+  width: 10rem;
+  text-align: right;
+  float: right;
+  color: #ffffff;
+  font-weight: bold;
+}
+.quiz-body {
+  margin-top: 15px;
+  padding-bottom: 50px;
+}
+.option-block-container {
+  margin-top: 20px;
+  max-width: 420px;
+}
+.option-block {
+  padding: 10px;
+  background: rgb(138, 136, 25);
+  border-radius: 1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.result-question {
+  font-weight: bold;
+}
+.c-wrong {
+  margin-left: 20px;
+  color: #ff0000;
+}
+.c-correct {
+  margin-left: 20px;
+  color: green;
+}
+.last-row {
+  border-bottom: 1px solid #000000;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.res-header {
+  border-bottom: 1px solid #000000;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}

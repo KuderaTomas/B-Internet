@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="navbar.css">
+    <title>B-Internet</title>
+</head>
+<body>
+    <div class="navik">
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="http://127.0.0.1:3000/b-in.html">Bezpečně na Internetu</a></div>
+                <ul class="links">
+                    <li><a href="http://127.0.0.1:3000/b-in.html">Domů</a></li>
+                    <li><a href="http://127.0.0.1:3000/KYB.html">KYB</a></li>
+                    <li><a href="http://127.0.0.1:3000/kybersikana.html">Kyberšikana</a></li>
+                    <li><a href="http://127.0.0.1:3000/soc-in.html">Soc. Inženýrství</a></li>
+                    <li><a href="http://127.0.0.1:3000/politikahesla.html">Hesla</a></li>
+                    <li><a href="http://127.0.0.1:3000/kontakty.html">Kontakty</a></li>
+                </ul>
+                <a href="http://127.0.0.1:3000/kviz.html" class="action_btn">Scénář/Kvíz</a>
+                <div class="toogle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="http://127.0.0.1:3000/b-in.html">Domů</a></li>
+                <li><a href="http://127.0.0.1:3000/KYB.html">KYB</a></li>
+                <li><a href="http://127.0.0.1:3000/kybersikana.html">Kyberšikana</a></li>
+                <li><a href="http://127.0.0.1:3000/soc-in.html">Soc. Inženýrství</a></li>
+                <li><a href="http://127.0.0.1:3000/politikahesla.html">Hesla</a></li>
+                <li><a href="http://127.0.0.1:3000/kontakty.html">Kontakty</a></li>
+                <li><a href="kviz.html" class="action_btn">Scénář/Kvíz</a></li>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section id="hero">
+            <h1 style="padding-bottom: 1rem;padding-left: 5rem;">Politika hesel</h1>
+            <p style="padding-bottom: 7rem;padding-left: 7rem;">Pouze v krátkosti.<br><br>Heslo by vždy mělo obsahovat nejméně 8 znaků (čím víc tím líp).<br><br>
+            Mělo by obsahovat velká a malá písmena.<br><br>Mělo by obsahovat čísla a speciální znaky (tečka,?,!).<br><br><br>
+            Příklad slabých používaných hesel: heslo123, heslo1234, 123456789, heslo12, atd.
+            <br><br>Příklad trochu silnějšího hesla: K0laC3k_89
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>B-In</h3>
+            <p>Pohybujte se opatrně v prostředí internetu</p>
+            <div class="footer-bottom">
+                <p>2023 Bezpečně na internetu - B-In</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const toogleBtn=document.querySelector('.toogle_btn');
+        const toogleBtnIcon=document.querySelector('.toogle_btn i');
+        const dropDownMenu=document.querySelector('.dropdown_menu');
+
+        toogleBtn.onclick=function()
+        {
+            dropDownMenu.classList.toggle('open');
+            const isOpen=dropDownMenu.classList.contains('open');
+
+            toogleBtnIcon.classList=isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

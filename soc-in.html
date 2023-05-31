@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="navbar.css">
+    <title>B-Internet</title>
+</head>
+<body>
+    <div class="navik">
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="http://127.0.0.1:3000/b-in.html">Bezpečně na Internetu</a></div>
+                <ul class="links">
+                    <li><a href="http://127.0.0.1:3000/b-in.html">Domů</a></li>
+                    <li><a href="http://127.0.0.1:3000/KYB.html">KYB</a></li>
+                    <li><a href="http://127.0.0.1:3000/kybersikana.html">Kyberšikana</a></li>
+                    <li><a href="http://127.0.0.1:3000/soc-in.html">Soc. Inženýrství</a></li>
+                    <li><a href="http://127.0.0.1:3000/politikahesla.html">Hesla</a></li>
+                    <li><a href="http://127.0.0.1:3000/politikahesla.html">Malware</a></li>
+                    <li><a href="http://127.0.0.1:3000/kontakty.html">Kontakty</a></li>
+                </ul>
+                <a href="http://127.0.0.1:3000/kviz.html" class="action_btn">Scénář/Kvíz</a>
+                <div class="toogle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="http://127.0.0.1:3000/b-in.html">Domů</a></li>
+                <li><a href="http://127.0.0.1:3000/KYB.html">KYB</a></li>
+                <li><a href="http://127.0.0.1:3000/kybersikana.html">Kyberšikana</a></li>
+                <li><a href="http://127.0.0.1:3000/soc-in.html">Soc. Inženýrství</a></li>
+                <li><a href="http://127.0.0.1:3000/politikahesla.html">Hesla</a></li>
+                <li><a href="http://127.0.0.1:3000/politikahesla.html">Malware</a></li>
+                <li><a href="http://127.0.0.1:3000/kontakty.html">Kontakty</a></li>
+                <li><a href="kviz.html" class="action_btn">Scénář/Kvíz</a></li>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section id="hero">
+            <h1>Sociální Inženýrství</h1>
+            <p>Jedno z čím dál více rozšířených nebezpečí na internetu. Jedná se o podvod, kdy se útočníci vydávají 
+                například za státní orgány (Policie ČR, Exekutorský úřad), za veřejně známou osobnost nebo i rodinného příslušníka.
+            Cílem je manipulace oběti a snaha vylákat její osobní údaje, navést ji na falešné stránky, získat údaje k bankovním účtům nebo i peníze.
+        </p><br>
+        <p>Zde je pár druhů sociální inženýrství:</p><br>
+        <a href="#phish">Phishing</a>
+        <a href="#sphish">Spear Phishing</a>
+        <a href="#vish">Vishnig</a>
+        <p style="margin-bottom: 5rem;margin-top: 3rem;">Nyní si je probereme trochu podrobněji.</p>
+        <h1 id="phish">Phishing</h1>
+        <p>Nejběžnější typ, se kterým se můžete setkat. Často se jedná o spamové účty třeba na Instagramu, které se vyznačují pěknými slečnami na profilovkách, často ve vyzývavé poloze, či oblečení a 18+ obsahem<br><br> Není to pravidlem, že se vyznačují tímto stylem, jen dávám příklad, se kterým jsem se snad již všichni setkali.
+            <br><br>Pokud jste se s těmito nebo jinými podobnými účty nesetkali, tak je to jen dobře pro vás. :-)<br><br>
+            Dále to mohou být emaily, stylu že jste nezaplatily za nějakou službu a odakazují vás na podezřelé stránky.
+            Je důležité, aby jste byli pozorní a věděli na jaký odkaz klikáte. Hlavní varováním můžou být pravopisné chyby a nebo odkazy na zahraniční (často ruské stránky).<br><br>
+            <br><br>Zase to nemusí být nutně ruská stránka, byl to jen příklad, se kterým jsem se setkal nejčastěji.<br><br>
+            Musím přidat incident, který se odehrál v mém blízkém prostředí.<br><br>
+            Stránka, se kterou se příbuzný setkal, byla česká a vše vypadalo velmi věruhodně.<br><br>byla to stránka jedné nejmenované banky, až na to že jsme zjistili že to není oficiální stránka, ale spíš podvodná.<br><br>Avšak když jsme se na ni společně podívali (poznamenám na její adresu url), tak jsme si všimli podezřelých prvků.<br><br>
+            Po navštívení oficiální stránky jsme zjistili, že adresa je úplně jiná a hned jsme věděli, že je něco špatně.
+        </p>
+        <h1 id="sphish">Spear Phishing</h1>
+        <p>Podobné jako předchozí typ, ale zde jsou již útoky přímo cílené na danou osobu, popřípadě instituci, či společnost.
+            Útočníci už znají základní informace o oběti (jméno, příjmení, bydliště, práci). Cílí nejčastěji na peněžní majetek oběti.
+            Využívají podvodné stránky a vyvíjejí časový nátlak na oběť.
+        </p>
+        <h1 id="vish">Vishing</h1>
+        <p>Podobné jako předchozí typ, ale je zprostředkováván telefonátem mezi útočníky a obětí. Skrze telefonát může být vyvíjen ještě větší tlak na oběť.
+            Útočníci se mohou vydávat za zaměstnance banky, policie nebo exekučního úřadu. K tomu mohou využívat spoofovaní telefoního čísla(telefoní číslo vypadá více důvěryhodně).
+            Dalo by se říct, že se jedná o nejzákeřnější útok.
+        </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>B-In</h3>
+            <p>Pohybujte se opatrně v prostředí internetu</p>
+            <div class="footer-bottom">
+                <p> 2023 Bezpečně na internetu - B-In</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const toogleBtn=document.querySelector('.toogle_btn');
+        const toogleBtnIcon=document.querySelector('.toogle_btn i');
+        const dropDownMenu=document.querySelector('.dropdown_menu');
+
+        toogleBtn.onclick=function()
+        {
+            dropDownMenu.classList.toggle('open');
+            const isOpen=dropDownMenu.classList.contains('open');
+
+            toogleBtnIcon.classList=isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
